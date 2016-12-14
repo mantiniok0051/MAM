@@ -1,0 +1,877 @@
+/* ==========================
+/////////// GENERAL /////////
+========================== */
+*{
+  outline: none;
+  font-family: helvetica neue;
+  text-decoration: none;
+  overflow: hidden;
+  letter-spacing: 1px; !important;
+}
+ul {
+  margin-bottom: -4px !important;
+}
+
+#welcome, #about-us, #portafolio, #portafolio-detail {
+  background: #000;
+  width: 100%;
+  height: 500px;
+  margin-top: -40px;
+}
+
+/* ==========================
+/////////// NAVBAR //////////
+========================== */
+ul.nav-bar {
+  text-align: center;
+}
+
+ul.nav-bar>li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 100px 0px 20px 0px;
+}
+
+ul.nav-bar>li>a {
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 15px 0px 15px;
+  color: #a8a8a8;
+  font-size: 22px;
+  font-weight: 200;
+}
+
+ul.nav-bar>li>a:hover {
+  color: #000 !important;
+}
+
+ul.nav-bar>li>a:active {
+  color: #000 !important;
+}
+
+/* --- Logo --- */
+#logo {
+  float: right;
+  margin-top: 30px !important;
+  margin-bottom: -4px !important;
+}
+
+img.logo {
+  width: 160px;
+  margin: 0px 10px 0px 0px;
+}
+
+/* ==========================
+/////////// SOCIAL //////////
+========================== */
+div.social {
+  text-align: center;
+}
+
+div.social a{
+  color: #818181;
+  font-size: 25px;
+  border: 1.5px solid #818181;
+  border-radius: 100%;
+  display: inline-block;
+  margin: 20px 5px 0px 5px;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+}
+
+div.social a:hover {
+  background: #818181;
+  color: #fff;
+}
+
+  /* --- Facebook --- */
+  div.social a.fa-facebook {
+    padding: 10px 15px 10px 15px;
+  }
+  /* --- Linkedin --- */
+  div.social a.fa-linkedin {
+    padding: 10px 11px 10px 11px;
+  }
+  /* --- Instagram --- */
+  div.social a.fa-instagram {
+    padding: 10px 11px 10px 11px;
+  }
+  /* --- Pinterest --- */
+  div.social a.fa-pinterest-p {
+    padding: 10px 11px 6px 11px;
+  }
+/* ==========================
+///////// BIENVENIDO ////////
+========================== */
+section#welcome > div.about-img {
+  float: left;
+  margin-left: 170px;
+  background: #fff;
+  overflow: hidden;
+  width: 650px;
+	height: 500px;
+	-webkit-transform: skew(-30deg);
+	-moz-transform: skew(-30deg);
+	-o-transform: skew(-30deg);
+  transform: skew(-30deg);
+}
+
+  /* --- Enderezar img --- */
+  section#welcome > div.about-img > img {
+    height: 700px;
+    margin: 0px 0px 100px -100px;
+    -webkit-transform: skew(30deg);
+  	-moz-transform: skew(30deg);
+  	-o-transform: skew(30deg);
+    transform: skew(30deg);
+  }
+
+section#welcome > div.about-text {
+  float: right;
+  margin-right: 20px;
+  margin-top: 60px;
+  bottom: 0px;
+  color: #fff;
+  width: 500px;
+}
+
+section#welcome > div.about-text > h1 {
+  padding-top: 150px;
+  font-size: 45px;
+  text-align: right;
+}
+
+section#welcome > div.about-text > p {
+  text-align: left;
+  font-weight: lighter;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+/* ==========================
+////////// NOSOTROS /////////
+========================== */
+section#about-us > div.about-img {
+  float: right;
+  margin-right: 146px;
+  background: #fff;
+  overflow: hidden;
+  width: 600px;
+	height: 500px;
+	-webkit-transform: skew(-30deg);
+	-moz-transform: skew(-30deg);
+	-o-transform: skew(-30deg);
+  transform: skew(-30deg);
+}
+
+  /* --- Enderezar img --- */
+  section#about-us > div.about-img img {
+    height: 670px;
+    margin-left: -95px;
+    -webkit-transform: skew(30deg)!important;
+  	-moz-transform: skew(30deg)!important;
+  	-o-transform: skew(30deg)!important;
+    transform: skew(30deg)!important;
+  }
+
+section#about-us > div.about-text {
+  float: left;
+  margin-left: 40px;
+  margin-top: 45px;
+  color: #fff;
+  width: 500px;
+}
+
+section#about-us > div.about-text > h1 {
+  font-size: 45px;
+}
+
+section#about-us > div.about-text > p {
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+/* ==========================
+///////// PORTAFOLIO ////////
+========================== */
+section#portafolio > div.contenedor {
+  background-color: #fff;
+  width: 1152px;
+  height: 500px;
+  margin-left: 145px;
+  align-self: center;
+  overflow: hidden;
+
+  -webkit-transform: skew(-30deg);
+	-moz-transform: skew(-30deg);
+	-o-transform: skew(-30deg);
+  transform: skew(-30deg);
+}
+
+#seccionA, #seccionB, #seccionC {
+  width: 33%;
+  display: inline-block;
+}
+
+#seccionA img, #seccionB img, #seccionC img {
+  height: 600px;
+  margin-left: -120px;
+
+  /* --- Efecto Blur --- */
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  filter: blur(5px);
+
+  -webkit-transform: skew(30deg);
+	-moz-transform: skew(30deg);
+	-o-transform: skew(30deg);
+  transform: skew(30deg);
+
+  /* --- Transicion --- */
+  transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+#seccionA img:hover, #seccionB img:hover, #seccionC img:hover {
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  filter: blur(0px);
+}
+
+/* ==========================
+///// PORTAFOLIO DETAIL /////
+========================== */
+section#portafolio-detail > div.about-img {
+  float: right;
+  margin-right: -180px;
+  background: #fff;
+  overflow: hidden;
+  width: 880px;
+	height: 500px;
+	-webkit-transform: skew(-30deg);
+	-moz-transform: skew(-30deg);
+	-o-transform: skew(-30deg);
+  transform: skew(-30deg);
+}
+
+  /* --- Enderezar img --- */
+  section#portafolio-detail > div.about-img img {
+    height: 670px;
+    margin-left: -95px;
+    -webkit-transform: skew(30deg)!important;
+  	-moz-transform: skew(30deg)!important;
+  	-o-transform: skew(30deg)!important;
+    transform: skew(30deg)!important;
+  }
+
+section#portafolio-detail > div.about-text {
+  float: left;
+  margin-left: 40px;
+  margin-top: 45px;
+  color: #fff;
+  width: 500px;
+}
+
+section#portafolio-detail > div.about-text > h1 {
+  font-size: 45px;
+}
+
+section#portafolio-detail > div.about-text > p {
+  font-weight: lighter;
+  font-size: 16px;
+}
+/* ==========================
+////////// CONTACTO /////////
+========================== */
+section#contact {
+  width: 100%;
+  height: 500px;
+  margin: -40px 0px 0px -176px;
+  background: #000;
+  -webkit-transform: skew(-40deg);
+	-moz-transform: skew(-40deg);
+	-o-transform: skew(-40deg);
+  transform: skew(-40deg);
+}
+
+section#contact div.about-img {
+  float: left;
+  -webkit-transform: skew(40deg);
+	-moz-transform: skew(40deg);
+	-o-transform: skew(40deg);
+  transform: skew(40deg);
+}
+section#contact div.about-img > img {
+  width: 390px;
+  margin: 82px 0px 0px 256px;
+
+}
+section#contact div.about-text {
+  float: right;
+  width: 600px;
+  margin-right: 110px;
+  margin-top: 45px;
+
+  -webkit-transform: skew(40deg);
+	-moz-transform: skew(40deg);
+	-o-transform: skew(40deg);
+  transform: skew(40deg);
+}
+
+input.form-control {
+  height: 20px;
+  width: 295px;
+  font-size: 13px;
+  border-radius: 0px;
+  font-weight: 300;
+}
+
+.form-control:focus {
+  border-color: #ccc;
+  background-color: #ccc;
+  color: #fff;
+}
+
+textarea.form-control {
+  width: 615px !important;
+  height: 135px !important;
+  border-radius: 0px;
+}
+
+button.boton {
+  color: #fff;
+  float: right;
+  background-color: transparent;
+  margin-right: 6px;
+  margin-top: -8px;
+  border-color: transparent !important;
+  font-weight: lighter;
+}
+
+section#contact div.about-text > h1 {
+  text-align: left;
+  color: #fff;
+  font-size: 45px;
+}
+
+#info-text {
+  color: #fff;
+  font-weight: lighter;
+}
+/* ==========================
+/////////// FOOTER //////////
+========================== */
+footer {
+  position:absolute;
+  bottom:5px;
+  width:100%;
+  height:20px;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 0;
+  font-weight: 200;
+}
+
+footer p > a > img {
+  width: 95px;
+}
+
+/* ==========================
+/////// MEDIA QUERIES ///////
+========================== */
+
+/* --- Laptop --- */
+@media only screen and (max-width: 1024px) {
+
+  /* --- General --- */
+  #welcome, #about-us, #portafolio, #portafolio-detail {
+    height: 400px;
+    margin-top: 0px;
+  }
+
+  section#about-us > div.about-text h1, section#welcome > div.about-text > h1,
+   section#contact > div.about-text > h1, section#portafolio-detail > div.about-text h1 {
+    font-size: 35px;
+  }
+
+  /* --- Navegador --- */
+  ul.nav-bar>li {
+    margin: 110px 0px 20px 0px;
+  }
+
+  ul.nav-bar>li>a {
+    font-size: 19px;
+    margin: 0px 10px 0px 10px;
+  }
+
+  img.logo {
+    width: 140px;
+    margin: 20px 10px 0px 0px;
+  }
+
+  /* --- Social --- */
+  div.social a {
+    font-size: 17px;
+  }
+    /* --- Facebook --- */
+    div.social a.fa-facebook {
+      padding: 10px 13px 10px 13px;
+    }
+
+    /* --- Pinterest --- */
+    div.social a.fa-pinterest-p {
+      padding: 12px 12px 7px 11px;
+    }
+
+  /* --- Bienvenido --- */
+  section#welcome > div.about-img {
+    width: 483px;
+    height: 400px;
+  }
+
+  section#welcome > div.about-img > img {
+    height: 500px;
+    margin: 0px 0px 1px -90px;
+  }
+
+  section#welcome > div.about-text {
+    margin-top: 30px;
+    width: 350px;
+  }
+
+  section#welcome > div.about-text > h1 {
+    padding-top: 140px;
+  }
+
+  section#welcome > div.about-text > p, section#about-us > div.about-text p,
+  section#portafolio-detail > div.about-text > p {
+    font-size: 11px;
+  }
+
+  /* --- Nosotros --- */
+  section#about-us > div.about-img {
+    width: 400px;
+    height: 400px;
+  }
+
+  section#about-us > div.about-img img {
+    height: 500px;
+  }
+
+  section#about-us > div.about-text {
+    width: 350px;
+    margin-top: 10px;
+  }
+
+  /* --- Portafolio --- */
+  section#portafolio > div.contenedor {
+    width: 793px;
+    height: 400px;
+    margin-left: 116px;
+  }
+
+  /* --- Portafolio --- */
+  #seccionA, #seccionB, #seccionC {
+    width: 32.9%;
+  }
+  #seccionA img, #seccionB img, #seccionC img {
+    height: 500px;
+  }
+
+  /* --- Portafolio Detail --- */
+  section#portafolio-detail > div.about-img {
+    width: 630px;
+    margin-right: -85px;
+  }
+
+  section#portafolio-detail > div.about-text {
+    width: 400px;
+    margin-top: 10px;
+  }
+
+  /* --- Contacto --- */
+  section#contact {
+    height: 400px;
+    margin: 10px 0px 0px -93px;
+    -webkit-transform: skew(-25deg);
+  	-moz-transform: skew(-25deg);
+  	-o-transform: skew(-25deg);
+    transform: skew(-25deg);
+  }
+
+  section#contact div.about-img > img {
+    width: 340;
+    margin: 35px 0px 0px 160px;
+
+      /* -- Enderezar imagen --*/
+      -webkit-transform: skew(-20deg);
+    	-moz-transform: skew(-20deg);
+    	-o-transform: skew(-20deg);
+      transform: skew(-20deg);
+  }
+
+  section#contact div.about-text {
+    width: 425;
+    margin-right: 50px;
+    margin-top: 0px;
+
+      /* -- Enderezar texto --*/
+      -webkit-transform: skew(25deg);
+      -moz-transform: skew(25deg);
+      -o-transform: skew(25deg);
+      transform: skew(25deg);
+  }
+
+  textarea.form-control {
+    height: 95px !important;
+    width: 440px !important;
+  }
+
+  input.form-control {
+    width: 235px;
+  }
+
+}
+
+/* --- Tablet --- */
+@media only screen and (max-width: 768px) {
+
+  /* --- General --- */
+  *{
+    overflow-y: auto;
+  }
+  #welcome, #about-us, #portafolio, #portafolio-detail, #contact {
+    height: 650px !important;
+  }
+
+  /* --- Navegador --- */
+  ul.nav-bar {
+    float: left;
+  }
+
+  ul.nav-bar>li>a {
+    margin: 0px 0px 0px 30px;
+  }
+
+  /* --- Bienvenido --- */
+  section#welcome > div.about-img, section#about-us > div.about-img,
+  section#portafolio-detail > div.about-img {
+    width: 100%;
+    height: 300;
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-bottom: 40px;
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    -o-transform: skew(0deg);
+    transform: skew(0deg);
+  }
+
+  section#welcome > div.about-img {
+    margin-top: -585px !important;
+  }
+
+  section#welcome > div.about-img > img {
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    -o-transform: skew(0deg);
+    transform: skew(0deg);
+  }
+
+  section#welcome > div.about-text {
+    float: none;
+    position: static;
+    margin-top: 260px;
+    width: 100% !important;
+    padding: 0px 10% 0px 60px;
+  }
+
+  section#welcome > div.about-text > h1, section#about-us > div.about-text > h1 {
+    float: left;
+    font-size: 45px;
+  }
+
+  section#welcome > div.about-text > p, section#about-us > div.about-text > p {
+    float: left;
+    font-size: 15px;
+  }
+
+  /* --- Nosotros && Portafolio Detail --- */
+  section#about-us > div.about-img, section#portafolio-detail > div.about-img  {
+    margin-right: 0px;
+  }
+  section#about-us > div.about-img img, section#portafolio-detail > div.about-img img {
+    -webkit-transform: skew(0deg) !important;
+    -moz-transform: skew(0deg) !important;
+    -o-transform: skew(0deg) !important;
+    transform: skew(0deg) !important;
+  }
+
+  section#about-us > div.about-text, section#portafolio-detail > div.about-text {
+    width: 100%;
+    position: absolute;
+    margin-top: 370;
+    padding: 0px 10% 0px 20px;
+  }
+
+  /* --- Portafolio --- */
+  section#portafolio > div.contenedor  {
+    width: 100%;
+    height: 550;
+    margin: 50px 0px 40px 0px !important;
+    -webkit-transform: skew(0deg);
+  	-moz-transform: skew(0deg);
+  	-o-transform: skew(0deg);
+    transform: skew(0deg);
+  }
+
+  #seccionA img, #seccionB img, #seccionC img {
+    height: 600px;
+    -webkit-transform: skew(0deg);
+  	-moz-transform: skew(0deg);
+  	-o-transform: skew(0deg);
+    transform: skew(0deg);
+  }
+
+  /* --- Contacto --- */
+  section#contact{
+    margin-left: 0px;
+    -webkit-transform: skew(0deg);
+  	-moz-transform: skew(0deg);
+  	-o-transform: skew(0deg);
+    transform: skew(0deg);
+  }
+
+  section#contact div.about-img > img {
+    width: 0px;
+    visibility: hidden;
+  }
+
+  section#contact div.about-text {
+    width: 100%;
+    float: right;
+    padding: 0px 10% 0px 10%;
+    margin: 40px 0px 0px 0px !important;
+    -webkit-transform: skew(0deg);
+  	-moz-transform: skew(0deg);
+  	-o-transform: skew(0deg);
+    transform: skew(0deg);
+  }
+
+  section#contact div.about-text > h1 {
+    font-size: 45px;
+  }
+
+  #formContact {
+    margin-top: 40px;
+  }
+
+  input.form-control {
+    height: 20px;
+    width: 100%;
+    font-size: 13px;
+    border-radius: 0px;
+    font-weight: 300;
+  }
+
+  textarea.form-control {
+    width: 100% !important;
+    height: 188px !important;
+    border-radius: 0px;
+  }
+
+  button.boton {
+    font-size: 15px;
+    margin-right: 6px !important;
+  }
+
+  /* --- Social --- */
+  div.social {
+    margin-bottom: 40px;
+  }
+
+  /* --- Footer --- */
+  footer {
+    position: inherit;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+/* --- Smartphone L --- */
+@media only screen and (max-width: 425px) {
+
+  /* --- Navegador --- */
+  #logo {
+    float: left;
+    margin-top: -75px !important;
+  }
+
+  img.logo {
+    width: 130px;
+    margin: 80px 0px 0px 9px;
+  }
+
+  .navbar-toggle {
+    border: 2px solid #313131;
+    transition-duration: 0.3s;
+  }
+
+  span.icon-bar {
+    color: #000 !important;
+  }
+
+  ul.nav-bar {
+    margin: 80px 0px 0px -180px;
+    transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+  }
+
+  ul.nav-bar>li {
+    margin: 20px 0px 3px 0px;
+    display: list-item;
+  }
+
+  ul.nav-bar>li>a {
+    margin: 0px 0px 0px 150px;
+  }
+
+  .navbar-header {
+    margin-top: 10px;
+  }
+
+  /* --- General --- */
+  #welcome, #about-us, #portafolio, #portafolio-detail, #contact {
+    height: 680px !important;
+  }
+
+  /* --- Bienvenido --- */
+  section#welcome > div.about-img {
+    margin-bottom: 0px;
+    margin-top: -580px;
+  }
+
+  section#welcome > div.about-text {
+    padding: 0px 0% 0px 60px;
+    margin-top: 235px;
+    margin-bottom: -10%;
+    float: none;
+    position: static;
+  }
+
+  /* --- Nosotros && Portafolio Detail --- */
+  section#about-us > div.about-text, section#portafolio-detail > div.about-text {
+    padding: 0px 95px 0px 0px;
+  }
+
+  /* --- Portafolio --- */
+  #seccionA, #seccionB, #seccionC {
+    width: 100%;
+    height: 33%;
+    overflow: hidden;
+    display: list-item;
+  }
+}
+
+/* --- Smartphone M --- */
+@media only screen and (max-width: 375px) {
+
+  /* --- General --- */
+  #welcome, #about-us, #portafolio, #portafolio-detail, #contact {
+    height: 700px !important;
+  }
+
+  /* --- Navegador --- */
+  ul.nav-bar>li>a {
+    margin: 0px 0px 0px 130px;
+  }
+
+  /* --- Bienvenido --- */
+  section#welcome > div.about-img {
+    margin-top: -598px !important;
+  }
+
+  /* --- Nosotros && Portafolio Detail --- */
+  section#about-us > div.about-img, section#portafolio-detail > div.about-img {
+    margin-top: 50px;
+  }
+}
+
+/* --- Smartphone S --- */
+@media only screen and (max-width: 320px) {
+
+  /* --- General --- */
+  section#welcome > div.about-img, section#about-us > div.about-img,
+  section#portafolio-detail > div.about-img {
+    height: 250px;
+  }
+
+  /* --- Bienvenido --- */
+  section#welcome > div.about-img {
+    margin-top: -575px !important;
+  }
+
+  section#welcome > div.about-text {
+    padding: 0px 0% 0px 36px;
+  }
+
+  section#welcome > div.about-text > h1 {
+    padding-top: 100px;
+  }
+
+  /* --- Nosotros && Portafolio Detail--- */
+  section#about-us > div.about-img, section#portafolio-detail > div.about-img {
+    margin-top: 57px;
+  }
+
+  section#about-us > div.about-text, section#portafolio-detail > div.about-text {
+    padding: 0px 75px 0px 0px;
+        margin-top: 365px;
+  }
+
+  section#about-us > div.about-text > h1, section#portafolio-detail > div.about-text > h1 {
+    margin-top: -8px;
+  }
+}
+ /* ============================================================================
+ ///////////////////////////////// ANIMACIONES /////////////////////////////////
+ ============================================================================ */
+ .view-slide-in.ng-enter {
+   transition: all 1s ease;
+   -webkit-transition:all 1s ease;
+   -moz-transition: all 1s ease;
+   -o-transition: all 1s ease;
+
+   opacity:0.5;
+   position:relative;
+   opacity:0;
+   top:10px;
+   left:20px;
+ }
+
+ .view-slide-in.ng-enter {
+  opacity: 0;
+}
+.view-slide-in.ng-enter.ng-enter-active {
+  top:0;
+  left:0;
+  opacity: 1;
+}
+.view-slide-in.ng-leave.ng-leave-active{
+  top:5px;
+  left:5px;
+  opacity:1;
+}
+.view-slide-in.ng-leave{
+  top:0;
+  left:0;
+  opacity:0;
+}

@@ -1,0 +1,97 @@
+<html ng-app='angularRoutingApp'>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="author" content="GreenLyon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- ========== Booststrap CSS ========== -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+        <!-- ========== Estilos CSS ========== -->
+        <link rel="stylesheet" href="css/style.css"> <!-- Estilos -->
+        <link rel="stylesheet" href="css/animation.css"> <!-- Animaciones -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- Font-Awesome -->
+    </head>
+
+    <body ng-controller='mainController' data-spy="scroll" data-target=".top-spy">
+
+        <!-- ========== Inicia Header ========== -->
+        <nav class="navbar" role="navigation">
+          <!-- Inicia Logo -->
+          <div id="logo">
+            <a href="#"><img class="logo" src="img/logo.png" alt=""></a>
+          </div>
+          <!-- Termina Logo -->
+            <div class="container">
+
+              <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed">
+
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span style="color:#000; font-size: 20px;" class="fa fa-bars"></span>
+
+                    </button>
+
+                </div> <!--./navbar-header-->
+
+                <!-- Inicia Nav URL-->
+                <div class="navbar-collapse" ng-class="{collapse: isCollapsed}">
+                    <ul class="nav-bar">
+                        <li>
+                            <a href="#/inicio">Bienvenido</a>
+                        </li>
+                        <li>
+                            <a href="#/nosotros">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#/portafolio">Proyectos</a>
+                        </li>
+
+                        <li>
+                            <a href="#/contacto">Contacto</a>
+                        </li>
+                    </li>
+                </ul>
+              </div><!-- Termina Nav URL -->
+        </div>
+
+    </nav>
+
+    <!-- ========== Inicia Contenedor ========== -->
+    <div class="main">
+      <div ng-view class="view-slide-in"></div>
+    </div> <!-- Termina Contenedor -->
+
+    <!-- ========== Inicia Social Media ========== -->
+    <div class="social">
+      <a class="fa fa-facebook" aria-hidden="true" href="https://www.facebook.com/muebleatemporalmx/" target="_blank"></a>
+      <a class="fa fa-linkedin" aria-hidden="true" href="https://www.linkedin.com/in/eduardo-venegas-sol%C3%ADs-ab50a768" target="_blank"></a>
+      <a class="fa fa-instagram" aria-hidden="true" href="https://www.instagram.com/mam.muebleatemporalmexicano/" target="_blank"></a>
+      <a class="fa fa-pinterest-p" aria-hidden="true" href="https://es.pinterest.com/MAMempresa/" target="_blank"></a>
+    </div> <!-- Termina Social Media -->
+
+    <!-- ========== Inicia Footer ========== -->
+    <footer>
+      <p>Sitio desarrollado por <a href="http://greenlyon.com" target="_blank"><img src="img/TEXTOGREEN.png" alt=""></a></p>
+    </footer> <!-- Termina Footer -->
+
+    <!-- ========== Librerias Angular JS ========== -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-route.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-animate.min.js"></script>
+
+    <!-- ========== Librerias Angular JS Locales ==========
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script> -->
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
